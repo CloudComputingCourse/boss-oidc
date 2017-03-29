@@ -26,7 +26,7 @@ except ImportError:
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
-    name='boss-oidc',
+    name='boss-oidc-cmucc',
     version='0.1',
     packages=['bossoidc'],
     url='https://github.com/jhuapl-boss/boss-oidc',
@@ -34,12 +34,13 @@ setup(
     author='Derek Pryor',
     author_email='Derek.Pryor@jhuapl.edu',
     description='Django Authentication OpenID Connect plugin for the Boss SSO',
+    dependency_links = ['https://github.com/CloudComputingCourse/pyoidc/tarball/master#egg=oiccmucc','https://github.com/CloudComputingCourse/django-oidc/tarball/master#egg=django-oidc-cmucc','https://github.com/CloudComputingCourse/drf-oidc-auth/tarball/master#egg=drf-oidc-auth-cmucc'],
     install_requires=[
         'django>=1.8',
         'djangorestframework>=2.4.0',
-        'oic>=0.7.6',
-        'django-oidc>=0.1.3',
-        'drf-oidc-auth>=0.8'
+        'oiccmucc',
+        'django-oidc-cmucc',
+        'drf-oidc-auth-cmucc'
     ],
     classifiers=[
         'Environment :: Web Environment',
