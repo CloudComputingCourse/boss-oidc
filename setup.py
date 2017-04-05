@@ -34,11 +34,10 @@ setup(
     author='Derek Pryor',
     author_email='Derek.Pryor@jhuapl.edu',
     description='Django Authentication OpenID Connect plugin for the Boss SSO',
-    dependency_links = ['https://github.com/CloudComputingCourse/pyoidc/tarball/master#egg=oiccmucc','https://github.com/CloudComputingCourse/django-oidc/tarball/master#egg=django-oidc-cmucc','https://github.com/CloudComputingCourse/drf-oidc-auth/tarball/master#egg=drf-oidc-auth-cmucc'],
+    dependency_links = ['https://github.com/CloudComputingCourse/django-oidc/tarball/master#egg=django-oidc-cmucc','https://github.com/CloudComputingCourse/drf-oidc-auth/tarball/master#egg=drf-oidc-auth-cmucc'],
     install_requires=[
         'django>=1.8',
-        'djangorestframework>=2.4.0',
-        'oiccmucc',
+        'oic>=7.6.0',
         'django-oidc-cmucc',
         'drf-oidc-auth-cmucc'
     ],
