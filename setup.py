@@ -37,6 +37,7 @@ setup(
     dependency_links = ['https://github.com/CloudComputingCourse/django-oidc/tarball/master#egg=django-oidc-cmucc','https://github.com/CloudComputingCourse/drf-oidc-auth/tarball/master#egg=drf-oidc-auth-cmucc'],
     install_requires=[
         'django>=1.8',
+        'djangorestframework>=2.4.0',
         'oic>=7.6.0',
         'django-oidc-cmucc',
         'drf-oidc-auth-cmucc'
